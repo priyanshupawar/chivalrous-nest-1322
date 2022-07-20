@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Signin</title>
+
+    <style>
+      /* navbar CSS start from here */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      #navbar {
+        display: flex;
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+          rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        padding: 10px;
+        margin-bottom: 2%;
+      }
+      #navbar a {
+        text-decoration: none;
+        color: black;
+      }
+
+      #left {
+        width: 70%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+      }
+      #left > div {
+        cursor: pointer;
+        margin: auto;
+      }
+      #left input {
+        width: 450px;
+        height: 27px;
+        margin: auto;
+      }
+      #right {
+        width: 29%;
+        display: flex;
+
+        justify-content: space-around;
+      }
+      #right > div {
+        cursor: pointer;
+        margin: auto;
+      }
+      #selecttag {
+        position: relative;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      #selecttag select {
+        padding: 8px;
+        border: 1px solid white;
+        font-size: medium;
+      }
+
+      #left > div:nth-child(1) {
+        font-size: 40px;
+        font-weight: bolder;
+      }
+      /* navbar CSS end from here */
+
+      /* signup CSS start from here */
+      /* .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      } */
+      /* .fa-facebook {
+        background: #3b5998;
+        color: white;
+      } */
+      #container-signup {
+        text-align: center;
+        padding: 20px;
+        width: 28%;
+        border: 2px solid red;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- /* navbar HTML start from here */ -->
+    <div id="navbar">
+      <div id="left">
+        <div><a href="">LYST</a></div>
+        <div><a href="">WOMEN</a></div>
+        <div><a href="">MEN</a></div>
+        <input placeholder="Search here" />
+      </div>
+      <div id="right">
+        <div><a href="">IN-US $</a></div>
+        <div id="selecttag">
+          <select>
+            <option value="">Help Center</option>
+            <option value="">Contact Us</option>
+            <option value="">About Us</option>
+            <option value="">Careers</option>
+          </select>
+        </div>
+
+        <div>
+          <a href="signin.html">Sign in</a>
+        </div>
+        <div>
+          <a href="signup.html">Sign up</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- /* navbar HTML end from here */ -->
+
+    <!-- /* signup HTML end from here */ -->
+    <div id="container-signup">
+      <button>New to LYST</button><button>Already a member</button>
+
+      <h2>Search thousands of fashion brands and stores all in one place</h2>
+      <h4>We just need a few details from you first.</h4>
+      <p>Email address</p>
+      <input type="email" />
+      <p>Password</p>
+      <input type="password" />
+      <div>
+        <input type="checkbox" /><span
+          >I would like to hear about products, services, and sales, including
+          personalized email alerts from Lyst. You can unsubscribe at any
+          time.</span
+        >
+      </div>
+
+      <button>Join LYST</button>
+
+      <div>or</div>
+      <div><button>Continu with Facebook</button></div>
+      <div>
+        <button>Continuue with Google</button>
+      </div>
+
+      <p>
+        By creating an account, you consent to Lyst’s
+        <a href="#">Terms & Conditions</a>. To learn more about how Lyst uses
+        and protects your personal data, please read Lyst’s
+        <a href="#">Privacy Policy</a>.
+      </p>
+      <!-- <a href="#" class="fa fa-facebook"></a> -->
+    </div>
+  </body>
+</html>
