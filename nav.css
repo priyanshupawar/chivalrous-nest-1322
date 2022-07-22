@@ -29,7 +29,7 @@ body {
   cursor: pointer;
   margin: auto;
 }
-#left > div > a > img {
+#left > div > a img {
   width: 120px;
 }
 #left input {
