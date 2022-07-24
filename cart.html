@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add cart</title>
+    <style>
+      body {
+        background-color: lightgray;
+      }
+      #container {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        justify-content: space-around;
+      }
+      #cart-box {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 15px;
+        width: 60%;
+        background-color: white;
+      }
+      h1 {
+        text-align: center;
+      }
+      #cart-box > p {
+        color: grey;
+      }
+      #price-box > p {
+        color: grey;
+      }
+      #price-box {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 15px;
+        width: 20%;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cart</h1>
+    <div id="container">
+      <div id="cart-box">
+        <p>PRODUCT DESCRIPTION</p>
+        <div id="box"></div>
+        <div><button>-</button id=""><button></button><button>+</button></div>
+      </div>
+      <div id="price-box">
+        <p>PRICE DETAILS</p>
+      </div>
+    </div>
+  </body>
+</html>
