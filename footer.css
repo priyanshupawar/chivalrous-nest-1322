@@ -105,12 +105,12 @@ body {
 }
 
 .footer-menu ul li a {
-  color: #cfd2d6;
+  color: black;
   text-decoration: none;
 }
 
 .footer-menu ul li a:hover {
-  color: #27bcda;
+  color: brown;
 }
 @media (max-width: 500px) {
   .footer-menu ul {
