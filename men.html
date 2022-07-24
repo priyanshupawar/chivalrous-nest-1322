@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Womens</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: whitesmoke;
+      }
+
+      /* slider start from here */
+      #mid-first {
+        width: 90%;
+        margin: auto;
+      }
+
+      #mid-first > img {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-top: 70px;
+      }
+
+      #mid-first button {
+        background-color: lightgrey;
+        cursor: pointer;
+        font-style: initial;
+        position: absolute;
+        top: 35%;
+        width: 4%;
+        height: 8%;
+        font-size: 25px;
+        color: grey;
+        border-radius: 50%;
+        border: none;
+      }
+
+      #mid-first button:nth-child(2) {
+        left: 1%;
+      }
+
+      #mid-first button:nth-child(3) {
+        right: 1%;
+      }
+      /* slider end  here */
+      #main-container {
+        display: flex;
+        gap: 3%;
+        margin: auto;
+      }
+      #filter-mens {
+        margin: 5% 0px 0px 2%;
+        display: grid;
+        gap: 10px;
+        width: 10%;
+        height: 100px;
+      }
+      #filter-mens > select {
+        border: none;
+        text-decoration: solid;
+      }
+      #filter-mens > select > option {
+        border: none;
+        font-size: 15px;
+        text-decoration: overline;
+      }
+      #container {
+        text-align: center;
+        width: 80%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: max-content;
+        gap: 20px;
+      }
+      #container > div {
+        margin: auto;
+        border-radius: 8px;
+        /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+        background-color: white;
+        padding: 20px;
+      }
+      #container > div img {
+        width: auto;
+        /* position: -webkit-sticky; */
+      }
+      #container > div button {
+        padding: 7px 52px;
+        margin-bottom: 20px;
+        border: 1px solid lightblue;
+        border-radius: 5px;
+
+        background-color: lightblue;
+        color: black;
+      }
+      #container > div button:hover {
+        padding: 10px 52px;
+        /* margin-bottom: 25px; */
+        border: 1px solid black;
+        border-radius: 8px;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        font-weight: 600;
+      }
+
+      @media all and (min-width: 481px) and (max-width: 720px) {
+        #container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media all and (min-width: 300px) and (max-width: 480px) {
+        #container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="midScroll">
+      <div id="mid-first">
+        <img
+          id="crauser"
+          src="https://images-static.nykaa.com/uploads/tr:w-3038,/ae6ac9e0-f8a5-4410-986f-a3413a965d5a.jpg"
+          alt="Error"
+        />
+        <button id="left-btn"><</button>
+        <button id="right-btn">></button>
+      </div>
+    </div>
+    <div id="main-container">
+      <div id="filter-mens">
+        <select name="" id="sortName">
+          <option value="">Sort by names</option>
+          <option value="Accending">Accending</option>
+          <option value="Decending">Decending</option>
+        </select>
+        <select name="" id="filterPrice">
+          <option value="">Sort by price</option>
+          <option value="Decending">High to low</option>
+          <option value="Accending">Low to high</option>
+        </select>
+      </div>
+
+      <div id="container"></div>
+    </div>
+  </body>
+</html>
+<script src="women.js"></script>
