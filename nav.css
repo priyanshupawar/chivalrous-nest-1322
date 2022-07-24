@@ -13,6 +13,7 @@ body {
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   padding: 10px 0px;
   margin-bottom: 2%;
+  background-color: white;
 }
 #navbar a {
   text-decoration: none;

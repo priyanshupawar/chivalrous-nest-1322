@@ -1,3 +1,6 @@
+body {
+  background-color: lightgray;
+}
 #home-first > img {
   width: 100%;
   height: auto;
@@ -14,7 +17,7 @@
   margin-top: 60px;
 }
 #home-second > div {
-  background-color: lightgray;
+  background-color: white;
 }
 #home-second div img {
   width: 100%;
@@ -37,22 +40,25 @@
 }
 
 #home-third > div {
-  background-color: lightgray;
-
   text-align: center;
 }
 #home-third > div > p {
+  text-transform: uppercase;
   padding: 5px 45px;
   text-align: center;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 12px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 #home-third div img {
   cursor: pointer;
   width: 100%;
 }
-#heading-1 {
+#home-third > div {
+  background-color: white;
+  text-align: center;
+}
+.heading-1 {
   background-color: black;
   text-align: center;
   margin: auto;
@@ -61,10 +67,85 @@
   margin-top: 50px;
   border-radius: 10px 50px;
 }
-#heading-1 > p {
+.heading-1 > p {
   font-weight: 500;
   font-style: oblique;
   color: white;
   font-size: 35px;
   cursor: pointer;
+}
+#home-fourth {
+  text-align: center;
+  width: 100%;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(5, 1fr);
+  margin: auto;
+  margin-top: 60px;
+}
+
+#home-fourth > div {
+  background-color: white;
+  text-align: center;
+}
+#home-fourth > div > p {
+  text-transform: uppercase;
+  padding: 5px 45px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#home-fourth div img {
+  cursor: pointer;
+  width: 100%;
+}
+#home-fifth {
+  text-align: center;
+  width: 100%;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(5, 1fr);
+  margin: auto;
+  margin-top: 60px;
+}
+
+#home-fifth > div {
+  background-color: white;
+  text-align: center;
+}
+#home-fifth > div > p {
+  text-transform: uppercase;
+  padding: 5px 45px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#home-fifth div img {
+  cursor: pointer;
+  width: 100%;
+}
+#home-six {
+  width: 100%;
+  margin-top: 40px;
+  border: 1px solid red;
+  display: flex;
+}
+#six-1 {
+  width: 70%;
+  border: 1px solid red;
+  display: flex;
+}
+#six-1 div {
+  padding: 5px;
+  width: 29%;
+
+  margin: auto;
+}
+#six-1 div :nth-child(1) {
+  font-size: 85px;
+}
+#six-1 div :nth-child(2) {
+  font-size: 40px;
 }
